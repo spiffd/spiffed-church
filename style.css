@@ -1,9 +1,9 @@
 /*!
 Theme Name: Spiffed Church
 Theme URI: http://underscores.me/
-Author: Underscores.me
+Author: Benjamin Lyons
 Author URI: http://underscores.me/
-Description: Description
+Description: A theme for Amazing Grace Christian Fellowship\'s website, amazinggrace.bz
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -265,14 +265,13 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: 'Open Sans', sans-serif;
+	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Nunito', sans-serif;
 	clear: both;
 }
 

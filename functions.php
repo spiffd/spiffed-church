@@ -79,7 +79,6 @@ if ( ! function_exists( 'spiffed_church_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-		
 	}
 endif;
 add_action( 'after_setup_theme', 'spiffed_church_setup' );

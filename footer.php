@@ -22,15 +22,13 @@
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'spiffed-church' ), 'spiffed-church', '<a href="http://underscores.me/">Underscores.me</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'spiffed-church' ), 'spiffed-church', '<a href="http://underscores.me/">Benjamin Lyons</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
-
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 
 </body>
 </html>

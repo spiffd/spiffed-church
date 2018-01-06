@@ -13,7 +13,7 @@ A starter theme called Spiffed Church.
 
 == Description ==
 
-Description
+A theme for Amazing Grace Christian Fellowship\'s website, amazinggrace.bz
 
 == Installation ==
 
