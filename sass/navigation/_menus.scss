@@ -1,89 +1,101 @@
+/* This site is mobile-first, so the mobile layout should be here. */
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-
+	position: absolute;
+	height: 100vh;
+	width: 90vw;
+	top: 0;
+	left: 100vw;
+	box-sizing: border-box;
+	z-index: 100000;
+	background: $color__background-body;
+	
 	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 100%;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
-	a {
 		display: block;
-		text-decoration: none;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			
+		}
+		
+		a {
+			display: block;
+			height: $height__header;
+			padding: 1rem;
+			border-bottom: 1px solid gray;
+			font-weight: 700;
+			text-decoration: none;
+			color: $color__text-main;
+		}
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
 }
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
-		display: none;
+		display: none !important;
 	}
-	.main-navigation ul {
-		display: block;
+	.main-navigation {
+		position: relative;
+		height: unset;
+		width: unset;
+		top: unset;
+		left: unset;
+		padding-right: 1rem;
+		background: none;
+		
+		> div > ul {
+			display: flex;
+			flex-direction: row;
+			
+			li {
+				display: inherit;
+				
+				&:not(:first-of-type) {
+					border-left: 1px solid gray;
+				}
+				
+				&:hover {
+					background: $color__background-button;
+					
+					> ul {
+						display: block;
+						position: absolute;
+						top: 3.5em;
+						background: $color__background-main;
+						box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+						
+						li {
+							border-left: unset;
+							border-top: 1px solid gray;
+						}
+					}
+				}
+				
+				ul { 
+					display: none;
+				}
+			}
+			
+			a {
+				display: inherit;
+				border-bottom: unset;
+			}
+		}
 	}
 }
+
+/* Mobile menu button. */
+.menu-toggle {
+	display: block;
+	padding: 1rem; // ( 3.5em (header.height) - 1.5em (this.font-size) ) / 2
+	border: unset;
+	background: unset;
+	font-size: 1.5em;
+  color: $color__text-main;
+}
+
+
 
 .comment-navigation,
 .posts-navigation,

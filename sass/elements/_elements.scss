@@ -9,7 +9,35 @@ html {
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	width: 100vw;
+	background: $color__background-body;
+	overflow-x: hidden;
+}
+
+header {
+	display: flex;
+	position: relative;
+	width: 100vw;
+	height: $height__header;
+  justify-content: space-between;
+	padding: 0;
+	z-index: 99999;
+	overflow: visible;
+	background: $color__background-main;
+	
+	@media screen and (min-width: 37.5em) {
+	}
+}
+
+main {
+	background: $color__background-main; /* Fallback for when there is no custom background color defined. */
+	@media screen and (min-width: 37.5em) {
+		margin: auto;
+		width: 62vw;
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	}
+	overflow: visible;
+	position: relative;
 }
 
 hr {
@@ -28,6 +56,9 @@ img {
 
 figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+footer {
 }
 
 @import "tables";

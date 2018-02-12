@@ -11,12 +11,13 @@
 
 <section>
 	
-	<?php
+	<div class="banner">
+		<?php
+		// the post's featured image
+		the_post_thumbnail(); ?>
+	</div>
 	
-	// the post's featured image
-	the_post_thumbnail(); ?>
-	
-	<h3><?php the_title(); ?></h3>
+	<h2><?php the_title(); ?></h2>
 
 	<?php the_content(); ?>
 	

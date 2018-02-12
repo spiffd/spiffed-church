@@ -1,2 +1,8 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
+
+$height__header: 3.5rem;
+
+$offset: 53px; //padding (32px) and width (21px) of the button
+$size__site-mobile-menu: calc( 100vw - #{$offset} );
+$size__site-mobile-menu_inverse: calc( #{$offset} - 100vw );

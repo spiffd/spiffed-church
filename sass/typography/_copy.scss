@@ -1,5 +1,5 @@
 p {
-	margin-bottom: 1.5em;
+	margin: 0 1em 1em 1em;
 }
 
 dfn, cite, em, i {
@@ -42,4 +42,9 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+small {
+	font-size: 80%;
+	color: $color__text-low-importance;
 }

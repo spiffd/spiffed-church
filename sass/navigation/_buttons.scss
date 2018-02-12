@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  border: 0.25em solid $color__text-main;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.85em 1em;
+  margin: 1.2em;
+  line-height: 1;
+  float: center;
+  text-align: unset;
+  text-decoration: none;
+  
+  &:hover {
+    background: $color__background-button;
+    color: $color__text-main;
+  }
+  
+  &:visited {
+    color: $color__text-main;
+  }
+}

@@ -4,8 +4,8 @@
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-header:before,
-.site-header:after,
+//.site-header:before,   I commented these statements out because the clearfix
+//.site-header:after,    was interfering with my flex layout in the header.
 .site-content:before,
 .site-content:after,
 .site-footer:before,

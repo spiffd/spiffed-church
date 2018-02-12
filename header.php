@@ -17,9 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11"><!-- wut -->
 	
-	<!--Apparently this is not the way to do this in Wordpress--
-	<!--<link href="https://fonts.googleapis.com/css?family=Nunito:900|Open+Sans" rel="stylesheet">-->
-
 	<?php wp_head(); ?>
 </head>
 
@@ -31,12 +28,12 @@
 	
 	<header id="masthead" class="site-header">
 		
-		<div class="site-branding">
+		<div id="site-branding">
 			<?php the_custom_logo(); ?>
 			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-		</div><!-- .site-branding -->
+		</div>
 			
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'spiffed-church' ); ?></button> <!-- mobile .menu-toggle -->
+		<button id="mobile-menu-button" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button> <!-- mobile .menu-toggle -->
 		
 		<nav id="site-navigation" class="main-navigation">
 			<?php
@@ -45,7 +42,7 @@
 					'menu_id'        => 'primary-menu',
 				) );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav><!-- .main-navigation -->
 
 	</header><!-- #masthead -->
 

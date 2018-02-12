@@ -24,8 +24,9 @@
 
 			// no template-part, the format is placed here ?>
 
-			<div class="banner background-image" id="home-banner"
-					 style="background-image: url('<?php echo $thumb_url; ?>');">
+			<div class="banner" id="home-banner">
+				
+				<img src="<?php echo $thumb_url; ?>">
 				
 				<div class="banner-text">
 

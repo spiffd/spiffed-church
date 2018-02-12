@@ -118,6 +118,10 @@ add_action( 'widgets_init', 'spiffed_church_widgets_init' );
  */
 function spiffed_church_scripts() {
 	wp_enqueue_style( 'spiffed-church-style', get_stylesheet_uri() );
+	
+	wp_enqueue_style( 'spiffed-church-google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:900|Open+Sans', false );
+	
+	wp_enqueue_style( 'spiffed-church-font-awesome-icons', 'https://use.fontawesome.com/releases/v5.0.4/css/all.css', false );
 
 	wp_enqueue_script( 'spiffed-church-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
